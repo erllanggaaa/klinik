@@ -1,0 +1,60 @@
+RewriteEngine On
+
+RewriteRule ^login?$ login.php
+RewriteRule ^register?$ register.php
+RewriteRule ^admin/dashboard?$ admin/index.php
+RewriteRule ^admin/logout?$ admin/logout.php
+RewriteRule ^admin/ubah-password?$ admin/ubah-password.php
+RewriteRule ^admin/simpan-ubah-password?$ admin/simpan-ubah-password.php
+RewriteRule ^admin/user?$ admin/dt-user.php
+RewriteRule ^admin/tambah-admin?$ admin/dt-t-user.php
+RewriteRule ^admin/simpan-admin?$ admin/dt-simpan-user.php
+RewriteRule ^admin/pasien?$ admin/dt-pasien.php
+RewriteRule ^admin/edit?$ admin/dt-edit.php
+RewriteRule ^admin/simpan-edit?$ admin/dt-simpan-edit.php
+RewriteRule ^admin/hapus?$ admin/dt-hapus.php
+RewriteRule ^admin/dokter?$ admin/dt-dokter.php
+RewriteRule ^admin/apoteker?$ admin/dt-apoteker.php
+RewriteRule ^admin/obat?$ admin/dt-obat.php
+RewriteRule ^admin/edit-obat?$ admin/dt-edit-obat.php
+RewriteRule ^admin/simpan-obat?$ admin/simpan-obat.php
+RewriteRule ^admin/hapus-obat?$ admin/hapus-obat.php
+RewriteRule ^admin/rekam-medis?$ admin/dt-rekam-medis.php
+RewriteRule ^admin/tambah-dokter?$ admin/dt-t-dokter.php
+RewriteRule ^admin/simpan-dokter?$ admin/dt-simpan-dokter.php
+RewriteRule ^admin/tambah-obat?$ admin/dt-t-obat.php
+RewriteRule ^admin/simpan-data-obat?$ admin/dt-simpan-obat.php
+RewriteRule ^admin/tambah-apoteker?$ admin/dt-t-apoteker.php
+RewriteRule ^admin/simpan-apoteker?$ admin/dt-simpan-apoteker.php
+
+RewriteRule ^dokter/dashboard?$ dokter/index.php
+RewriteRule ^dokter/logout?$ dokter/logout.php
+RewriteRule ^dokter/ubah-password?$ dokter/ubah-password.php
+RewriteRule ^dokter/simpan-ubah-password?$ dokter/simpan-ubah-password.php
+RewriteRule ^dokter/rekam-medis?$ dokter/dt-rekam-medis.php
+RewriteRule ^dokter/tambah-rekam-medis?$ dokter/dt-tambah-rekam-medis.php
+RewriteRule ^dokter/simpan-rekam-medis?$ dokter/dt-simpan-rekam-medis.php
+RewriteRule ^dokter/edit?$ dokter/dt-edit.php
+RewriteRule ^dokter/simpan-edit?$ dokter/dt-simpan-edit.php
+
+RewriteRule ^apoteker/dashboard?$ apoteker/index.php
+RewriteRule ^apoteker/logout?$ apoteker/logout.php
+RewriteRule ^apoteker/ubah-password?$ apoteker/ubah-password.php
+RewriteRule ^apoteker/simpan-ubah-password?$ apoteker/simpan-ubah-password.php
+RewriteRule ^apoteker/pembayaran-belum-lunas?$ apoteker/dt-pembayaran.php
+RewriteRule ^apoteker/pembayaran-lunas?$ apoteker/dt-pembayaran2.php
+RewriteRule ^apoteker/bayar?$ apoteker/dt-bayar.php
+RewriteRule ^apoteker/simpan-bayar?$ apoteker/dt-simpan-bayar.php
+RewriteRule ^apoteker/detail?$ apoteker/dt-detail.php
+RewriteRule ^apoteker/supplier?$ apoteker/dt-supplier.php
+RewriteRule ^apoteker/edit?$ apoteker/dt-edit-supplier.php
+RewriteRule ^apoteker/simpan-edit?$ apoteker/dt-simpan-edit.php
+RewriteRule ^apoteker/hapus?$ apoteker/dt-hapus-supplier.php
+RewriteRule ^apoteker/tambah-supplier?$ apoteker/dt-tambah-supplier.php
+RewriteRule ^apoteker/simpan-supplier?$ apoteker/dt-simpan-supplier.php
+
+RewriteRule ^pasien/dashboard?$ pasien/index.php
+RewriteRule ^pasien/logout?$ pasien/logout.php
+RewriteRule ^pasien/ubah-password?$ pasien/ubah-password.php
+RewriteRule ^pasien/simpan-ubah-password?$ pasien/simpan-ubah-password.php
+RewriteRule ^pasien/history-rekam-medis?$ pasien/dt-rekam-medis.php 
